@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: Create New Employee API
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 4.874 s <<< FAILURE! - in Create New Employee API
+Create New Employee API.Verify User able to create new employee #1  Time elapsed: 2.006 s  <<< ERROR!
+java.lang.NullPointerException
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at org.json.JSONTokener.<init>(JSONTokener.java:66)
+	at org.json.JSONObject.<init>(JSONObject.java:402)
+	at com.noorteck.qa.utils.APIUtils.modifyTestData(APIUtils.java:413)
+	at com.noorteck.qa.utils.APIUtils.getRequestBody(APIUtils.java:350)
+	at com.noorteck.qa.utils.APIUtils.setRequestBodyTestData(APIUtils.java:242)
+	at com.noorteck.qa.steps.CommonAPISteps.setRequestBody(CommonAPISteps.java:50)
+	at ✽.User sets request body 'EmpTestData:scrum:0'(file:///C:/Users/godso/random%20workspace/New%20folder/NooRteck-API-RestAssured-Version3/src/test/resources/hr/US100-CreateNewEmployee.feature:8)
+
+Create New Employee API.Verify User able to create new employee #2  Time elapsed: 0.53 s  <<< ERROR!
+java.lang.NullPointerException
+	at java.base/java.io.StringReader.<init>(StringReader.java:50)
+	at org.json.JSONTokener.<init>(JSONTokener.java:66)
+	at org.json.JSONObject.<init>(JSONObject.java:402)
+	at com.noorteck.qa.utils.APIUtils.modifyTestData(APIUtils.java:413)
+	at com.noorteck.qa.utils.APIUtils.getRequestBody(APIUtils.java:350)
+	at com.noorteck.qa.utils.APIUtils.setRequestBodyTestData(APIUtils.java:242)
+	at com.noorteck.qa.steps.CommonAPISteps.setRequestBody(CommonAPISteps.java:50)
+	at ✽.User sets request body 'EmpTestData:scrum:1'(file:///C:/Users/godso/random%20workspace/New%20folder/NooRteck-API-RestAssured-Version3/src/test/resources/hr/US100-CreateNewEmployee.feature:8)
+

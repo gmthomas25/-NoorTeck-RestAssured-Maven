@@ -1,0 +1,346 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-01-20T23:05:54.293Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4999200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify User able to create new employee",
+        "description": "",
+        "id": "create-new-employee-api;verify-user-able-to-create-new-employee;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 569606900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User set \"Employee:PostNewEmp\" \"scrum\" webservice api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee:PostNewEmp\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"scrum\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setUpAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 57566400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sets Header Parameters",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setHeaders(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type"
+                ]
+              },
+              {
+                "cells": [
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.io.StringReader.\u003cinit\u003e(StringReader.java:50)\r\n\tat org.json.JSONTokener.\u003cinit\u003e(JSONTokener.java:66)\r\n\tat org.json.JSONObject.\u003cinit\u003e(JSONObject.java:402)\r\n\tat com.noorteck.qa.utils.APIUtils.modifyTestData(APIUtils.java:413)\r\n\tat com.noorteck.qa.utils.APIUtils.getRequestBody(APIUtils.java:350)\r\n\tat com.noorteck.qa.utils.APIUtils.setRequestBodyTestData(APIUtils.java:242)\r\n\tat com.noorteck.qa.steps.CommonAPISteps.setRequestBody(CommonAPISteps.java:50)\r\n\tat ✽.User sets request body \u0027EmpTestData:scrum:0\u0027(file:///C:/Users/godso/random%20workspace/New%20folder/NooRteck-API-RestAssured-Version3/src/test/resources/hr/US100-CreateNewEmployee.feature:8)\r\n",
+              "duration": 1087004700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User sets request body \u0027EmpTestData:scrum:0\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027EmpTestData:scrum:0\u0027",
+                  "offset": 23
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setRequestBody(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User sends POST request",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.makePOSTrequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User validates status code \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateStatusCode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 998400,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User validates response body field",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateResponseBody(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message"
+                ]
+              },
+              {
+                "cells": [
+                  "Created employee"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 630100,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User validates cross validates against application database",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.crossValidateAgainstAppDB()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateEmpNew"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-01-20T23:05:56.144Z",
+        "before": [
+          {
+            "result": {
+              "duration": 999900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify User able to create new employee",
+        "description": "",
+        "id": "create-new-employee-api;verify-user-able-to-create-new-employee;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.noorteck.qa.steps.Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3561900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User set \"Employee:PostNewEmp\" \"scrum\" webservice api",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Employee:PostNewEmp\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"scrum\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setUpAPI(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1002400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User sets Header Parameters",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setHeaders(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Content-Type"
+                ]
+              },
+              {
+                "cells": [
+                  "application/json"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat java.base/java.io.StringReader.\u003cinit\u003e(StringReader.java:50)\r\n\tat org.json.JSONTokener.\u003cinit\u003e(JSONTokener.java:66)\r\n\tat org.json.JSONObject.\u003cinit\u003e(JSONObject.java:402)\r\n\tat com.noorteck.qa.utils.APIUtils.modifyTestData(APIUtils.java:413)\r\n\tat com.noorteck.qa.utils.APIUtils.getRequestBody(APIUtils.java:350)\r\n\tat com.noorteck.qa.utils.APIUtils.setRequestBodyTestData(APIUtils.java:242)\r\n\tat com.noorteck.qa.steps.CommonAPISteps.setRequestBody(CommonAPISteps.java:50)\r\n\tat ✽.User sets request body \u0027EmpTestData:scrum:1\u0027(file:///C:/Users/godso/random%20workspace/New%20folder/NooRteck-API-RestAssured-Version3/src/test/resources/hr/US100-CreateNewEmployee.feature:8)\r\n",
+              "duration": 536996900,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User sets request body \u0027EmpTestData:scrum:1\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027EmpTestData:scrum:1\u0027",
+                  "offset": 23
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.setRequestBody(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1062600,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User sends POST request",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.makePOSTrequest()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User validates status code \"201\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"201\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateStatusCode(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1029800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User validates response body field",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.validateResponseBody(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "message"
+                ]
+              },
+              {
+                "cells": [
+                  "Created employee"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 521300,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User validates cross validates against application database",
+            "match": {
+              "location": "com.noorteck.qa.steps.CommonAPISteps.crossValidateAgainstAppDB()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateEmpNew"
+          }
+        ]
+      }
+    ],
+    "name": "Create New Employee API",
+    "description": "",
+    "id": "create-new-employee-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/hr/US100-CreateNewEmployee.feature",
+    "tags": []
+  }
+]
